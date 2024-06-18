@@ -1,0 +1,57 @@
+<!-- Modal HTML -->
+<div class="modal fade signup-modal" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body px-0 py-2 py-sm-0">
+          <button type="button" class="btn-close position-absolute top-0 end-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row mx-0 align-items-center">
+            <div class="col-md-6 border-end-md p-4 p-sm-5">
+              <h2 class="h3 mb-4 mb-sm-5">Ingresa.<br />Encontra el trabajo que te mereces:</h2>
+              <ul class="list-unstyled mb-4 mb-sm-5">
+                <li class="d-flex mb-2">
+                  <i class="fi-check-circle text-primary mt-1 me-2"></i>
+                  <span>Los mejores trabajo</span>
+                </li>
+                <li class="d-flex mb-2">
+                  <i class="fi-check-circle text-primary mt-1 me-2"></i>
+                  <span>Visualizacion total</span>
+                </li>
+                <li class="d-flex mb-0">
+                  <i class="fi-check-circle text-primary mt-1 me-2"></i>
+                  <span>subi tu porfolio</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <img src="/images/signin-modal/signup.svg" width="344" height="404" alt="Illustration">
+              </div>
+              <div class="mt-sm-4 pt-md-3">Tenes una cuenta? <a href="#" id="signInLink">Ingresar</a></div>
+            </div>
+            <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5">
+              <form id="signupForm" novalidate>
+                <div class="mb-4">
+                  <label for="su-name" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="su-name" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="mb-4">
+                  <label for="su-email" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" id="su-email" placeholder="Ingrese un Correo" required>
+                </div>
+                <div class="mb-4">
+                  <label for="su-password" class="form-label">
+                    Contraseña <span class="fs-sm text-muted">min. 8 Caracteres</span>
+                  </label>
+                  <input type="password" class="form-control" id="su-password" minlength="8" required>
+                </div>
+                <div class="mb-4">
+                  <label for="su-confirm-password" class="form-label">Confirmar contraseña</label>
+                  <input type="password" class="form-control" id="su-confirm-password" minlength="8" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
