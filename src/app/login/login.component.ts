@@ -15,11 +15,7 @@ export class LoginComponent {
   constructor(public dialogRef: MatDialogRef<LoginComponent>, private dialog: MatDialog) {}
 
 
-  signIn() {
-    // Aquí podrías agregar lógica para autenticar al usuario, etc.
-    // Luego, cierra el diálogo
-    this.dialogRef.close();
-  }
+  
   close() {
     this.dialogRef.close();
   }

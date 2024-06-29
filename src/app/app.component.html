@@ -1,6 +1,39 @@
-
-<div class="main-content">
-  <app-navbar></app-navbar>
-  <app-home></app-home>
-</div>
-<p>padre principal</p>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-auto" href="#">IFTS 11</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login" id="login" routerLink="/login" (click)="navegateToLogin()">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register" id="register" routerLink="/login"
+            (click)="navegateToRegister()">Registrarse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user" id="login" routerLink="/user" (click)="navegateToUser()">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/update" id="update" routerLink="/update" (click)="navegateToUpdate()">Actualizar
+            usuario</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex">
+      <button class="btn btn-outline-primary me-2" type="button" data-bs-toggle="modal" data-bs-target="#signinModal"
+        (click)="openLoginModal()">Iniciar sesión</button>
+    </div>
+    <div class="d-flex">
+      <button class="btn btn-outline-primary me-2" type="button" data-bs-toggle="modal"
+        data-bs-target="#signupModal">Registrarse</button>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

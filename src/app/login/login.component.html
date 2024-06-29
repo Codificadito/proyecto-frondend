@@ -1,44 +1,42 @@
-<!-- Modal HTML -->
-<div class="modal fade signin-modal" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body px-0 py-2 py-sm-0">
-          <button type="button" class="btn-close position-absolute top-0 end-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close" (click)="close()" ></button>
-          <div class="row mx-0 align-items-center">
-            <div class="col-md-6 border-end-md p-4 p-sm-5">
-              <h2 class="h3 mb-4 mb-sm-5">Hey hola!<br />Bienvenido de nuevo.</h2>
-              <div class="d-flex justify-content-center">
-                <img src="public/signin.svg" width="344" height="292" alt="Illustration">
+<div class="modal fade signin-modal" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body px-0 py-2 py-sm-0">
+        <button type="button" class="btn-close position-absolute top-0 end-0 mt-3 me-3" data-bs-dismiss="modal"
+          aria-label="Close" (click)="close()"></button>
+        <div class="row mx-0 align-items-center">
+          <div class="col-md-6 border-end-md p-4 p-sm-5">
+            <h2 class="h3 mb-4 mb-sm-5">Hey hola!<br />Bienvenido de nuevo.</h2>
+            <div class="d-flex justify-content-center">
+              <img src="public/signin.svg" width="344" height="292" alt="Illustration">
+            </div>
+            <div class="mt-4 mt-sm-5">No tienes una cuenta? <a href="#" id="signUpLink">Registrate</a></div>
+          </div>
+          <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5">
+            <form id="signinForm" novalidate>
+              <div class="mb-4">
+                <label for="si-email" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="si-email" placeholder="Ingresa tu email" required>
+                <div class="invalid-feedback">
+                  Porfavor ingresar un email valido.
+                </div>
               </div>
-              <div class="mt-4 mt-sm-5">No tienes una cuenta? <a href="#" id="signUpLink">Registrate</a></div>
-            </div>
-            <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5">
-              <form id="signinForm" novalidate>
-                <div class="mb-4">
-                  <label for="si-email" class="form-label">Correo Electronico</label>
-                  <input type="email" class="form-control" id="si-email" placeholder="Ingresa tu email" required>
-                  <div class="invalid-feedback">
-                    Porfavor ingresar un email valido.
-                  </div>
+              <div class="mb-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <label for="si-password" class="form-label mb-0">Contraseña</label>
+                  <a href="#" class="fs-sm">Olvidaste tu contraseña?</a>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <label for="si-password" class="form-label mb-0">Contraseña</label>
-                    <a href="#" class="fs-sm">Olvidaste tu contraseña?</a>
-                  </div>
-                  <input type="password" class="form-control" id="si-password" placeholder="Ingresa tu contraseña" required>
-                  <div class="invalid-feedback">
-                    porfavor ingresa tu contraseña
-                  </div>
+                <input type="password" class="form-control" id="si-password" placeholder="Ingresa tu contraseña"
+                  required>
+                <div class="invalid-feedback">
+                  porfavor ingresa tu contraseña
                 </div>
-                <button type="submit" class="btn btn-primary w-100" (click)="openRegisterModal()">Registrarse</button>
-              </form>
-            </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100" (click)="openRegisterModal()">Registrarse</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-<app-register></app-register>
-  
+</div>

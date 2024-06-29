@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { LoginComponent } from '../login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { RegisterComponent } from '../register/register.component';
+import { config } from 'rxjs';
+
 
 @Component({
   selector: 'app-navbar',
@@ -16,8 +18,10 @@ export class NavbarComponent {
   openLoginModal() {
     this.dialog.open(LoginComponent);
   }
+
   openRegisterModal() {
     this.dialog.open(RegisterComponent);
   }
+
 }
 
